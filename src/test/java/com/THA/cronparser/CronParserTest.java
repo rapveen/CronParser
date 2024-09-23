@@ -69,5 +69,17 @@ public class CronParserTest {
         String expectedError = "Usage: java CronParser \"<cron_expression>\"";
         assertTrue(errContent.toString().contains(expectedError));
     }
+
+    @Test
+    public void testEmptyCommand() {
+        String cronExpression = "*/10 0 1-15/3 * 2-4 ";
+
+        String[] args = { cronExpression };
+
+        CronParser.main(args);
+
+        String expectedError = "Command field cannot be empty.";
+        assertTrue(errContent.toString().contains(expectedError));
+    }
 }
 

@@ -21,7 +21,7 @@ public class CronFieldHandler {
         parserMap.put("*", new WildcardFieldHandler());
         parserMap.put(",", new ListFieldHandler());
         parserMap.put("-", new RangeFieldHandler());
-        parserMap.put("/", new StepFieldHandler());
+        parserMap.put("/", new StepFieldHandler(new WildcardFieldHandler(), new RangeFieldHandler()));  // Inject dependencies
     }
 
     public static Set<Integer> handleField(String expression, int min, int max) {
@@ -63,4 +63,3 @@ public class CronFieldHandler {
         return sb.toString();
     }
 }
-

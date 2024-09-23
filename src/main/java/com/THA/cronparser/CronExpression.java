@@ -10,8 +10,11 @@ public class CronExpression {
     private CronField dayOfWeek;
     private String command;
 
-    public CronExpression(String minuteExp, String hourExp, String dayOfMonthExp,
-                          String monthExp, String dayOfWeekExp, String command) {
+    public CronExpression(String[] expressionParts) {
+        this(expressionParts[0], expressionParts[1], expressionParts[2], expressionParts[3], expressionParts[4], expressionParts[5]);
+    }
+
+    public CronExpression(String minuteExp, String hourExp, String dayOfMonthExp, String monthExp, String dayOfWeekExp, String command) {
         this.minute = new CronField(CronFieldType.MINUTES, minuteExp);
         this.hour = new CronField(CronFieldType.HOURS, hourExp);
         this.dayOfMonth = new CronField(CronFieldType.DAY_OF_MONTH, dayOfMonthExp);
