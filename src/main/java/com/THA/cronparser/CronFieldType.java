@@ -1,4 +1,4 @@
-package main.java.com.THA.cronparser;
+package com.THA.cronparser;
 
 public enum CronFieldType {
     MINUTES(0, 59),

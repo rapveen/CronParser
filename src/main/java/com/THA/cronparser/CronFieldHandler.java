@@ -1,4 +1,4 @@
-package main.java.com.THA.cronparser;
+package com.THA.cronparser;
 
 import java.util.HashMap;
 import java.util.Map;

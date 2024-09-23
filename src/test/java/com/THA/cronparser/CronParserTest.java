@@ -1,4 +1,4 @@
-package test.java.com.THA.cronparser;
+package com.THA.cronparser;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.BeforeEach;
