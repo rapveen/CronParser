@@ -1,4 +1,6 @@
-package com.THA.cronparser;
+package com.THA.cronparser.fieldhandler;
+
+import com.THA.cronparser.CronFieldHandler;
 
 import java.util.*;
 

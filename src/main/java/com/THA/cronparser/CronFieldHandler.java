@@ -1,5 +1,7 @@
 package com.THA.cronparser;
 
+import com.THA.cronparser.fieldhandler.*;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
